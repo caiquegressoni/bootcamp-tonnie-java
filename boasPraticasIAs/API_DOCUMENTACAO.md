@@ -430,3 +430,6 @@ curl -X PUT http://localhost:3000/api/products/1 \
 - Sempre valide os dados de entrada para evitar problemas de integridade.
 
 ---
+
+# Link de Projeto Referencia
+*https://github.com/alinealien/boas-praticas-para-IAs*
