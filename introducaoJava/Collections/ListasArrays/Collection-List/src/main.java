@@ -2,19 +2,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class main{
-    public static void main(String[] args){
-        int[] code = {12, 332, 44, 90};
-        System.out.println(code.length);
-        System.out.println(code[0]);
-        System.out.println(code[1]);
-        System.out.println(code[2]);
-        System.out.println(code[3]);
-        System.out.println("----");
-        List<Integer> lista = new ArrayList<>();
-        lista.add(code[0]);
-        lista.add(code[1]);
-        lista.add(code[2]);
-        lista.add(code[3]);
-        lista.forEach(System.out::println);
-    }
-}    
+    public static void main(String[] args) {
+        List<User> users = new ArrayList<>();
+        var user = new User ("Faizao", "faiza@faiao.com", 45, 1);
+        users.add(new User("Franco", "franco@franco.com", 20, 2));
+        users.add(new User("Leo", "leo@franco.com", 20, 3));
+        users.add(user);
+
+        System.out.println(users.contains(user));
+        System.out.println(users.size());
+        System.out.println(users.isEmpty());
+        System.out.println(users.getFirst());
+        System.out.println(users.getLast());
+    }    
+}
